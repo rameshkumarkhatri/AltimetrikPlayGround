@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+    >
+        <LinearLayout
+
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.mobifyall.altimetrikplayground.fragment.VehicalDetailFragment"
+        >
+
+            <ImageView android:layout_width="match_parent" android:layout_height="200dp"
+                       android:id="@+id/iv_2" android:layout_marginTop="8dp"/>
+            <ImageView android:layout_width="match_parent" android:layout_height="200dp"
+                       android:id="@+id/iv_1" android:layout_marginTop="8dp"/>
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_20sp"
+                    app:layout_constraintTop_toTopOf="parent" android:id="@+id/tv_vehicle_detail_heading"
+                    android:gravity="left"
+                    android:text="@string/vehicle_detail"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_10dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sp"
+                    app:layout_constraintTop_toTopOf="parent" android:id="@+id/tv_details"
+                    android:gravity="left"
+                    android:padding="@dimen/_10dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_20sp"
+                    app:layout_constraintTop_toTopOf="parent" android:id="@+id/tv_fuel_heading"
+                    android:gravity="left"
+                    android:text="@string/fuel_status"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_10dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sp"
+                    app:layout_constraintTop_toTopOf="parent" android:id="@+id/tv_fuel"
+                    android:gravity="left"
+                    android:padding="@dimen/_10dp"/>
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_20sp"
+                    app:layout_constraintTop_toTopOf="parent" android:id="@+id/tv_status_heading"
+                    android:gravity="left"
+                    android:text="@string/vehicle_status"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_10dp"/>
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_15sp"
+                    app:layout_constraintTop_toTopOf="parent" android:id="@+id/tv_status"
+                    android:gravity="left"
+                    android:padding="@dimen/_10dp"/>
+
+
+            <com.github.mikephil.charting.charts.LineChart android:layout_width="match_parent"
+                                                           android:layout_height="@dimen/_150dp"></com.github.mikephil.charting.charts.LineChart>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</layout>
